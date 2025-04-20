@@ -1,6 +1,6 @@
 <address>
   {% for contact in site.data.contact %}
-    contact.name<br>
+    {{ contact.name }}<br>
     <img src="/assets/img/contact/{{ contact.name | downcase }}.png" alt="{{ contact.name }}" width="100" height="100"><br>
     Email: <a href="mailto:{{ contact.email }}">{{ contact.email }}</a><br>
     Mail: {{ contact.mail }}<br>
