@@ -1,1 +1,8 @@
-<address><a href="mailto:webmaster@example.com">Jon Doe</a></address>
+<address>
+  {% for contact in site.data.contact %}
+    contact.name</br>
+    Email: <a href="mailto:{{ contact.email }}">{{ contact.email }}</a></br>
+    Mail: {{ contact.email }}</br>
+    Phone: {{ contact.email }}</br>
+  {% endfor %}
+</address>
